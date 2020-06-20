@@ -40,7 +40,6 @@ class ArticleViewModel {
             case .success(let news):
                 
                 self.articles.accept(news.results)
-                print(news.results.map{$0.imageURL})
                 
             case .failure(let failure):
                 

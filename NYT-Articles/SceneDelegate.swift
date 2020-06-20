@@ -20,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             let nav = UINavigationController()
-            let mainView = ViewController(nibName: nil, bundle: nil)
-            nav.viewControllers = [mainView]
+            nav.viewControllers = [ArticlesTabViewController(nibName: nil, bundle: nil)]
             window.rootViewController = nav
             self.window = window
             window.makeKeyAndVisible()

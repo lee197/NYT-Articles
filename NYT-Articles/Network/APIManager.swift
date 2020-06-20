@@ -58,6 +58,7 @@ class APIManager: ArticleFetchingProtocol {
                     case 200:
                         
                         let value = try decoder.decode(Articles.self, from: data)
+                        print(value)
                         completion(.success(value))
                         
                     case 400...499:
