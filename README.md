@@ -6,7 +6,7 @@ An app to display a list of New York Times News
 * master - stable app releases
 * develop - development branch, merge features branches here
 
-## NASA METEORITE API:
+## New York Times Articles API:
 
 * Emailed Sorted News: https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=dylOnQnYUzEF1B9MTYYHM0MyffMPBZRi
 * Viewed Sorted News: https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=dylOnQnYUzEF1B9MTYYHM0MyffMPBZRi
