@@ -10,7 +10,7 @@
 		2A54CE5EF2FC962683C601E2 /* Pods_NYT_ArticlesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B28872E09C6DD334E70CA7E /* Pods_NYT_ArticlesTests.framework */; };
 		39ADE01F249CFAFB00C8B3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADE01E249CFAFB00C8B3D9 /* AppDelegate.swift */; };
 		39ADE021249CFAFB00C8B3D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADE020249CFAFB00C8B3D9 /* SceneDelegate.swift */; };
-		39ADE023249CFAFB00C8B3D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADE022249CFAFB00C8B3D9 /* ViewController.swift */; };
+		39ADE023249CFAFB00C8B3D9 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADE022249CFAFB00C8B3D9 /* ArticleListViewController.swift */; };
 		39ADE028249CFAFC00C8B3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39ADE027249CFAFC00C8B3D9 /* Assets.xcassets */; };
 		39ADE02B249CFAFC00C8B3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39ADE029249CFAFC00C8B3D9 /* LaunchScreen.storyboard */; };
 		39ADE036249CFAFC00C8B3D9 /* NYT_ArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADE035249CFAFC00C8B3D9 /* NYT_ArticlesTests.swift */; };
@@ -41,7 +41,7 @@
 		39ADE01B249CFAFB00C8B3D9 /* NYT-Articles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYT-Articles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39ADE01E249CFAFB00C8B3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39ADE020249CFAFB00C8B3D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39ADE022249CFAFB00C8B3D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39ADE022249CFAFB00C8B3D9 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		39ADE027249CFAFC00C8B3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39ADE02A249CFAFC00C8B3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39ADE02C249CFAFC00C8B3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,17 +103,16 @@
 		39ADE01D249CFAFB00C8B3D9 /* NYT-Articles */ = {
 			isa = PBXGroup;
 			children = (
+				39ADE04C249E42BD00C8B3D9 /* View */,
+				39ADE04E249E42D800C8B3D9 /* Network */,
+				39ADE04D249E42C900C8B3D9 /* Model */,
+				39ADE04F249E42E300C8B3D9 /* ViewModel */,
+				39ADE056249EA8FD00C8B3D9 /* Support */,
 				39ADE01E249CFAFB00C8B3D9 /* AppDelegate.swift */,
 				39ADE020249CFAFB00C8B3D9 /* SceneDelegate.swift */,
-				39ADE050249E55E200C8B3D9 /* ArticlesCell.swift */,
-				39ADE052249E82DF00C8B3D9 /* ScaleToFillImageView.swift */,
-				39ADE04C249E42BD00C8B3D9 /* View */,
 				39ADE027249CFAFC00C8B3D9 /* Assets.xcassets */,
 				39ADE029249CFAFC00C8B3D9 /* LaunchScreen.storyboard */,
 				39ADE02C249CFAFC00C8B3D9 /* Info.plist */,
-				39ADE04D249E42C900C8B3D9 /* Model */,
-				39ADE04E249E42D800C8B3D9 /* Network */,
-				39ADE04F249E42E300C8B3D9 /* ViewModel */,
 			);
 			path = "NYT-Articles";
 			sourceTree = "<group>";
@@ -130,7 +129,8 @@
 		39ADE04C249E42BD00C8B3D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39ADE022249CFAFB00C8B3D9 /* ViewController.swift */,
+				39ADE050249E55E200C8B3D9 /* ArticlesCell.swift */,
+				39ADE022249CFAFB00C8B3D9 /* ArticleListViewController.swift */,
 				39ADE04A249E42AE00C8B3D9 /* ArticleDetailViewController.swift */,
 				39ADE054249E93B400C8B3D9 /* ArticlesTabViewController.swift */,
 			);
@@ -159,6 +159,14 @@
 				39ADE046249D087800C8B3D9 /* ArticlesViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39ADE056249EA8FD00C8B3D9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				39ADE052249E82DF00C8B3D9 /* ScaleToFillImageView.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		737C6501344B922C26C3687E /* Pods */ = {
@@ -369,7 +377,7 @@
 				39ADE041249CFCA600C8B3D9 /* Articles.swift in Sources */,
 				39ADE043249CFCC800C8B3D9 /* APIManager.swift in Sources */,
 				39ADE051249E55E200C8B3D9 /* ArticlesCell.swift in Sources */,
-				39ADE023249CFAFB00C8B3D9 /* ViewController.swift in Sources */,
+				39ADE023249CFAFB00C8B3D9 /* ArticleListViewController.swift in Sources */,
 				39ADE01F249CFAFB00C8B3D9 /* AppDelegate.swift in Sources */,
 				39ADE021249CFAFB00C8B3D9 /* SceneDelegate.swift in Sources */,
 				39ADE053249E82DF00C8B3D9 /* ScaleToFillImageView.swift in Sources */,

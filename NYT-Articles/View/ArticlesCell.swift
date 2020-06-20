@@ -7,17 +7,27 @@
 //
 
 import UIKit
+
 class ArticlesCell: UITableViewCell {
     let sectionLabel = UILabel()
     let titleLabel = UILabel()
     let abstrctLabel = UILabel()
     let titleImageView = ScaleAspectFitImageView.init(image: UIImage(named: "blank"))
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        setupSectionLabel()
+        setupTitileLabel()
+        setupAbstrctLabel()
+        setupTitleImageLabel()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupSectionLabel() {
         let marginGuide = contentView.layoutMarginsGuide
-        
         contentView.addSubview(sectionLabel)
         sectionLabel.translatesAutoresizingMaskIntoConstraints = false
         sectionLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
@@ -26,8 +36,10 @@ class ArticlesCell: UITableViewCell {
         sectionLabel.numberOfLines = 0
         sectionLabel.font = UIFont(name: "Avenir-Book", size: 12)
         sectionLabel.textColor = UIColor.lightGray
-
-        
+    }
+    
+    private func setupTitileLabel() {
+        let marginGuide = contentView.layoutMarginsGuide
         contentView.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
@@ -35,19 +47,23 @@ class ArticlesCell: UITableViewCell {
         titleLabel.topAnchor.constraint(equalTo: sectionLabel.bottomAnchor).isActive = true
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont(name: "AvenirNext-DemiBold", size: 16)
-        
+    }
+    
+    private func setupAbstrctLabel() {
+        let marginGuide = contentView.layoutMarginsGuide
         contentView.addSubview(abstrctLabel)
-        contentView.addSubview(titleImageView)
-
         abstrctLabel.translatesAutoresizingMaskIntoConstraints = false
         abstrctLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
-        abstrctLabel.bottomAnchor.constraint(equalTo: titleImageView.topAnchor).isActive = true
         abstrctLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
         abstrctLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         abstrctLabel.numberOfLines = 0
         abstrctLabel.font = UIFont(name: "Avenir-Book", size: 12)
         abstrctLabel.textColor = UIColor.lightGray
-        
+    }
+    
+    private func setupTitleImageLabel() {
+        let marginGuide = contentView.layoutMarginsGuide
+        contentView.addSubview(titleImageView)
         titleImageView.translatesAutoresizingMaskIntoConstraints = false
         titleImageView.clipsToBounds = true
         titleImageView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
@@ -56,10 +72,5 @@ class ArticlesCell: UITableViewCell {
         titleImageView.topAnchor.constraint(equalTo: abstrctLabel.bottomAnchor).isActive = true
         titleImageView.heightAnchor.constraint(equalToConstant: 293).isActive = true
         titleImageView.widthAnchor.constraint(equalToConstant: 440).isActive = true
-
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

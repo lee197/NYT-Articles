@@ -29,7 +29,6 @@ struct ArticleResult: Decodable {
         if media.count != 0 {
             if media[0].mediaMetadata.count > 2 {
                 return media[0].mediaMetadata[2].url
-
             } else {
                 return nonImageUrl
             }

@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewController: UIViewController, UIScrollViewDelegate {
-    var articlesViewModel = ArticleViewModel()
+class ArticleListViewController: UIViewController, UIScrollViewDelegate {
+    private var articlesViewModel = ArticleViewModel()
     private let disposeBag = DisposeBag()
     private let rankingFactor: ArticlesRankingType
     private weak var tableView: UITableView!
