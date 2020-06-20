@@ -24,7 +24,7 @@ struct ArticleResult: Decodable {
     let section, subsection: String
     let title, abstract: String
     private let media: [Media]
-    private let nonImageUrl = "https://elasticbeanstalk-eu-west-1-805589474796.s3-eu-west-1.amazonaws.com/no-image-found-360x260.png"
+    private let nonImageUrl = "https://elasticbeanstalk-eu-west-1-805589474796.s3-eu-west-1.amazonaws.com/the-new-york-times-logo-featured.jpg"
     var imageURL: String {
         if media.count != 0 {
             if media[0].mediaMetadata.count > 2 {

@@ -49,10 +49,14 @@ class ArticlesCell: UITableViewCell {
         abstrctLabel.textColor = UIColor.lightGray
         
         titleImageView.translatesAutoresizingMaskIntoConstraints = false
+        titleImageView.clipsToBounds = true
         titleImageView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         titleImageView.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
         titleImageView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
         titleImageView.topAnchor.constraint(equalTo: abstrctLabel.bottomAnchor).isActive = true
+        titleImageView.heightAnchor.constraint(equalToConstant: 293).isActive = true
+        titleImageView.widthAnchor.constraint(equalToConstant: 440).isActive = true
+
     }
     
     required init?(coder aDecoder: NSCoder) {

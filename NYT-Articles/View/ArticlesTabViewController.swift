@@ -15,6 +15,7 @@ class ArticlesTabViewController: UITabBarController, UITabBarControllerDelegate 
         
         //Assign self for delegate for that ViewController can respond to UITabBarControllerDelegate methods
         self.delegate = self
+        self.navigationItem.title = "New York Times News"
         
     }
     
@@ -24,22 +25,21 @@ class ArticlesTabViewController: UITabBarController, UITabBarControllerDelegate 
         // Create Tab one
         let emailedTab = ViewController(rankingFactor: .email)
         emailedTab.title = "Articles"
-        let emailedTabBarItem = UITabBarItem(title: "emailed", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
+        let emailedTabBarItem = UITabBarItem(title: "emailed", image: UIImage(named: "icon-emailed.png"), selectedImage: UIImage(named: "icon-emailed.png"))
         
         emailedTab.tabBarItem = emailedTabBarItem
         
         
-        // Create Tab two
         let sharedTab = ViewController(rankingFactor: .share)
         sharedTab.title = "Articles"
-        let sharedTabBarItem = UITabBarItem(title: "shared", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        let sharedTabBarItem = UITabBarItem(title: "shared", image: UIImage(named: "icon-shared.png"), selectedImage: UIImage(named: "icon-shared.png"))
         
         sharedTab.tabBarItem = sharedTabBarItem
         
         let viewedTab = ViewController(rankingFactor: .view)
         viewedTab.title = "Articles"
         
-        let viewedTabBarItem = UITabBarItem(title: "viewed", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+        let viewedTabBarItem = UITabBarItem(title: "viewed", image: UIImage(named: "icon-viewed.png"), selectedImage: UIImage(named: "icon-viewed.png"))
         
         viewedTab.tabBarItem = viewedTabBarItem
         

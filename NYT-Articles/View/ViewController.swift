@@ -46,6 +46,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.view.addBlurArea(area: self.view.frame, style: .dark)
         self.view.backgroundColor = .white
         self.view.addSubview(tableView)
+
         tableView.register(ArticlesCell.self, forCellReuseIdentifier: "aCell")
         articlesViewModel.fetchData(sortType: self.rankingFactor)
         setupBinding()
