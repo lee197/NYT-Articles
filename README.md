@@ -22,12 +22,6 @@ Installation
 ```
 $ sudo gem install cocoapods
 ```
-
-Create a pod file in your Xcode project directory:
-```
-$ pod init
-```
-
 Then install the pods in your Xcode project directory:
 ```
 $ pod install
