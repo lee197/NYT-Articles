@@ -43,7 +43,6 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addBlurArea(area: self.view.frame, style: .dark)
         self.view.backgroundColor = .white
         self.view.addSubview(tableView)
 
@@ -70,17 +69,5 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
             
         }).disposed(by: disposeBag)
-    }
-}
-
-extension UIView {
-    func addBlurArea(area: CGRect, style: UIBlurEffect.Style) {
-        let effect = UIBlurEffect(style: style)
-        let blurView = UIVisualEffectView(effect: effect)
-        let container = UIView(frame: area)
-        blurView.frame = CGRect(x: 0, y: 0, width: area.width, height: area.height)
-        container.addSubview(blurView)
-        container.alpha = 0.9
-        self.insertSubview(container, at: 1)
     }
 }
