@@ -13,12 +13,13 @@ import RxCocoa
 enum ArticleError {
     case serverMessage(String)
     case clientError(String)
+    case initError
 }
 
 class ArticleViewModel {
     let articles: BehaviorRelay<[ArticleResult]> = BehaviorRelay(value: .init())
     let isLoading: BehaviorRelay<Bool> = BehaviorRelay(value: false)
-    let error: BehaviorRelay<ArticleError> = BehaviorRelay(value: .clientError("init error"))
+    let error: BehaviorRelay<ArticleError> = BehaviorRelay(value: .initError)
     private let disposeable = DisposeBag()
     private let apiClient: ArticleFetchingProtocol
     

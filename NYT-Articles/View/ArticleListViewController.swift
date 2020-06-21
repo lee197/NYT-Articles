@@ -33,31 +33,35 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
     }
     
     init(rankingFactor: ArticlesRankingType) {
-          self.rankingFactor = rankingFactor
-          super.init(nibName: nil, bundle: nil)
-      }
-      
-      required init?(coder: NSCoder) {
-          fatalError("init(coder:) has not been implemented")
-      }
+        self.rankingFactor = rankingFactor
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.view.addSubview(tableView)
-
+        
         tableView.register(ArticlesCell.self, forCellReuseIdentifier: "aCell")
         articlesViewModel.fetchData(sortType: self.rankingFactor)
         setupBinding()
+        setupErrorBinding()
     }
     
     private func setupBinding(){
         
-        articlesViewModel.articles.observeOn(MainScheduler.instance).bind(to: tableView.rx.items(cellIdentifier: "aCell", cellType: ArticlesCell.self)) {  (row,article,cell) in
-            cell.titleLabel.text = article.title
-            cell.sectionLabel.text = article.section
-            cell.abstrctLabel.text = article.abstract
-            cell.titleImageView.downloaded(from: article.imageURL, contentMode: .scaleAspectFit)
+        articlesViewModel
+            .articles
+            .observeOn(MainScheduler.instance)
+            .bind(to: tableView.rx.items(cellIdentifier: "aCell", cellType: ArticlesCell.self)) {  (row,article,cell) in
+                cell.titleLabel.text = article.title
+                cell.sectionLabel.text = article.section
+                cell.abstrctLabel.text = article.abstract
+                cell.titleImageView.downloaded(from: article.imageURL, contentMode: .scaleAspectFit)
         }.disposed(by: disposeBag)
         
         tableView.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
@@ -69,5 +73,31 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
             
         }).disposed(by: disposeBag)
+    }
+    
+    private func setupErrorBinding() {
+        articlesViewModel
+            .error
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] error in
+                guard let self = self else {
+                    return
+                }
+                switch error {
+                 case .clientError(let message):
+                    self.showAlert(alertMessage: message)
+                 case .serverMessage(let message):
+                    self.showAlert(alertMessage: message)
+                default:
+                    break
+                 }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func showAlert(alertMessage:String) {
+        let alert = UIAlertController(title: "Alert", message: alertMessage, preferredStyle: .alert)
+        alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
