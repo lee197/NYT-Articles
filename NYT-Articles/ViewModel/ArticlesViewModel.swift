@@ -16,40 +16,51 @@ enum ArticleError {
     case initError
 }
 
-class ArticleViewModel {
-    let articles: BehaviorRelay<[ArticleResult]> = BehaviorRelay(value: .init())
-    let isLoading: BehaviorRelay<Bool> = BehaviorRelay(value: false)
-    let error: BehaviorRelay<ArticleError> = BehaviorRelay(value: .initError)
-    private let disposeable = DisposeBag()
-    private let apiClient: ArticleFetchingProtocol
+protocol ViewModelType {
+    associatedtype Input
+    associatedtype Output
     
-    init(apiClient: ArticleFetchingProtocol = APIManager()) {
-        self.apiClient = apiClient
-    }
-    
-    func fetchData(sortType: ArticlesRankingType){
-        self.apiClient.requestData(type: sortType){ [weak self] result in
-            guard let self = self else {
-                return
-            }
-            
-            self.isLoading.accept(false)
-            
-            switch result {
-            case .success(let news):
-                self.articles.accept(news.results)
-            case .failure(let failure):
-                switch failure {
-                case .connectionError:
-                    self.error.accept(.clientError("Check your Internet connection."))
-                case .authorizationError(let errorString):
-                    self.error.accept(.serverMessage(errorString))
-                default:
-                    self.error.accept(.serverMessage("Unknown Error"))
-                }
-            }
-        }
-    }
+    var input: Input { get }
+    var output: Output { get }
 }
 
+struct ArticleViewModel: ViewModelType {
+    let input: Input
+    let output: Output
+    
+    private let disposeable = DisposeBag()
+    private let apiClient: ArticleFetchingObservable
+    let rankingType: ArticlesRankingType
+    
+    struct Input {
+        let reload: PublishRelay<Void>
+    }
+    
+    struct Output {
+        let articles: PublishRelay<[ArticleResult]>
+        let error: PublishRelay<String>
+    }
+    
+    init(apiClient: ArticleFetchingObservable = APIManager(), rankingType: ArticlesRankingType) {
+        self.apiClient = apiClient
+        self.rankingType = rankingType
+        let errorRelay = PublishRelay<String>()
+        let articleRelay = PublishRelay<[ArticleResult]>()
+        
+        apiClient.requestData(type: rankingType).subscribe(
+            onNext: { article in
+                articleRelay.accept(article.results)
+        },
+            onError: { error in
+                print(error.localizedDescription)
+                errorRelay.accept(error.localizedDescription)
+        },
+            onCompleted: {
+                print("Completed event.")
+        }).disposed(by: disposeable)
+        
+        self.input = Input(reload: PublishRelay<Void>())
+        self.output = Output(articles: articleRelay, error: errorRelay)
+    }
+}
 

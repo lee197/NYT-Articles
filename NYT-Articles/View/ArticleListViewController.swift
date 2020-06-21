@@ -11,9 +11,9 @@ import RxSwift
 import RxCocoa
 
 class ArticleListViewController: UIViewController, UIScrollViewDelegate {
-    private var articlesViewModel = ArticleViewModel()
-    private let disposeBag = DisposeBag()
+    private var articlesViewModel = ArticleViewModel(rankingType: .email)
     private let rankingFactor: ArticlesRankingType
+    private let disposeBag = DisposeBag()
     private weak var tableView: UITableView!
     
     override func loadView() {
@@ -45,18 +45,17 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.view.addSubview(tableView)
+        articlesViewModel = ArticleViewModel(rankingType: rankingFactor)
         
         tableView.register(ArticlesCell.self, forCellReuseIdentifier: "aCell")
-        articlesViewModel.fetchData(sortType: self.rankingFactor)
         setupBinding()
         setupErrorBinding()
     }
     
     private func setupBinding(){
         
-        articlesViewModel
+        articlesViewModel.output
             .articles
-            .observeOn(MainScheduler.instance)
             .bind(to: tableView.rx.items(cellIdentifier: "aCell", cellType: ArticlesCell.self)) {  (row,article,cell) in
                 cell.titleLabel.text = article.title
                 cell.sectionLabel.text = article.section
@@ -69,7 +68,8 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
                 return
             }
             self.tableView.deselectRow(at: indexPath, animated: true)
-            let vc = ArticleDetailViewController(urlString: self.articlesViewModel.articles.value[indexPath.row].url)
+            let article: ArticleResult = try! self.tableView.rx.model(at: indexPath)
+            let vc = ArticleDetailViewController(urlString: article.imageURL)
             self.navigationController?.pushViewController(vc, animated: true)
             
         }).disposed(by: disposeBag)
@@ -77,20 +77,13 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
     
     private func setupErrorBinding() {
         articlesViewModel
-            .error
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] error in
+            .output
+            .error.asDriver(onErrorJustReturn: "")
+            .drive(onNext: { [weak self] error in
                 guard let self = self else {
                     return
                 }
-                switch error {
-                 case .clientError(let message):
-                    self.showAlert(alertMessage: message)
-                 case .serverMessage(let message):
-                    self.showAlert(alertMessage: message)
-                default:
-                    break
-                 }
+                self.showAlert(alertMessage: error.description)
             })
             .disposed(by: disposeBag)
     }

@@ -1,0 +1,1236 @@
+{
+"status": "OK",
+"copyright": "Copyright (c) 2020 The New York Times Company.  All Rights Reserved.",
+"num_results": 20,
+"results": [
+{
+"uri": "nyt://article/025e2891-057d-5f4c-8c84-604c088f13a2",
+"url": "https://www.nytimes.com/2020/06/15/opinion/coronavirus-college-safe.html",
+"id": 100000007185873,
+"asset_id": 100000007185873,
+"source": "New York Times",
+"published_date": "2020-06-15",
+"updated": "2020-06-18 16:30:10",
+"section": "Opinion",
+"subsection": "",
+"nytdsection": "opinion",
+"adx_keywords": "Colleges and Universities;Coronavirus (2019-nCoV);Coronavirus Reopenings;Age, Chronological;Youth;Coronavirus Risks and Safety Concerns;United States",
+"column": null,
+"byline": "By Laurence Steinberg",
+"type": "Article",
+"title": "Expecting Students to Play It Safe if Colleges Reopen Is a Fantasy",
+"abstract": "Safety plans border on delusional and could lead to outbreaks of Covid-19 among students, faculty and staff.",
+"des_facet": [
+"Colleges and Universities",
+"Coronavirus (2019-nCoV)",
+"Coronavirus Reopenings",
+"Age, Chronological",
+"Youth",
+"Coronavirus Risks and Safety Concerns"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [
+"United States"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Students on the campus of Columbia University in March.",
+"copyright": "Hiroko Masuike/The New York Times",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/15steinbergWeb/15steinbergWeb-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/15steinbergWeb/merlin_170402568_075aac78-e234-4bb4-a460-a53fbda9709d-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/15steinbergWeb/merlin_170402568_075aac78-e234-4bb4-a460-a53fbda9709d-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/80e600c6-f158-5cfe-b2c0-6481fb1d4952",
+"url": "https://www.nytimes.com/2020/06/17/dining/olive-loaf-recipe-coronavirus.html",
+"id": 100000007196292,
+"asset_id": 100000007196292,
+"source": "New York Times",
+"published_date": "2020-06-17",
+"updated": "2020-06-18 09:36:26",
+"section": "Food",
+"subsection": "",
+"nytdsection": "food",
+"adx_keywords": "Quarantine (Life and Culture);Cooking and Cookbooks;Bakeries and Baked Products;Recipes",
+"column": null,
+"byline": "By Melissa Clark",
+"type": "Article",
+"title": "A Savory Loaf Packed With Cheese and Olives",
+"abstract": "Stack slices with tomato and onions, spread with tapenade or eat plain for a simple snack.",
+"des_facet": [
+"Quarantine (Life and Culture)",
+"Cooking and Cookbooks",
+"Bakeries and Baked Products",
+"Recipes"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Melissa Clark/The New York Times",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/17/dining/17pantry-blog/17pantry-blog-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/17/dining/17pantry-blog/17pantry-blog-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/17/dining/17pantry-blog/17pantry-blog-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/d255055d-6990-524e-bbfd-dd90d9179460",
+"url": "https://www.nytimes.com/2020/06/13/opinion/sunday/women-leaders-coronavirus.html",
+"id": 100000007189054,
+"asset_id": 100000007189054,
+"source": "New York Times",
+"published_date": "2020-06-13",
+"updated": "2020-06-15 12:11:26",
+"section": "Opinion",
+"subsection": "Sunday Review",
+"nytdsection": "opinion",
+"adx_keywords": "Women and Girls;Politics and Government;Coronavirus (2019-nCoV);Deaths (Fatalities);Quarantines;United States Politics and Government;Trump, Donald J",
+"column": null,
+"byline": "By Nicholas Kristof",
+"type": "Article",
+"title": "What the Pandemic Reveals About the Male Ego",
+"abstract": "Why are the rates of coronavirus deaths far lower in many female-led countries?",
+"des_facet": [
+"Women and Girls",
+"Politics and Government",
+"Coronavirus (2019-nCoV)",
+"Deaths (Fatalities)",
+"Quarantines",
+"United States Politics and Government"
+],
+"org_facet": [],
+"per_facet": [
+"Trump, Donald J"
+],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "President Tsai Ing-wen of Taiwan at a military base this spring amid the coronavirus pandemic.",
+"copyright": "Ritchie B. Tongo/EPA, via Shutterstock",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/sunday/15Kristof2/14Kristof2-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/sunday/15Kristof2/merlin_171421221_ec3ba2ca-4f93-47c8-9727-f5ad9ab7f258-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/sunday/15Kristof2/merlin_171421221_ec3ba2ca-4f93-47c8-9727-f5ad9ab7f258-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/1dbe45c0-1cb4-54e9-9c77-e6b6c17745fe",
+"url": "https://www.nytimes.com/2020/06/12/world/americas/coronavirus-peru-inequality-corruption.html",
+"id": 100000007186115,
+"asset_id": 100000007186115,
+"source": "New York Times",
+"published_date": "2020-06-12",
+"updated": "2020-06-13 15:13:37",
+"section": "World",
+"subsection": "Americas",
+"nytdsection": "world",
+"adx_keywords": "Coronavirus (2019-nCoV);Economic Conditions and Trends;Politics and Government;Income Inequality;Corruption (Institutional);Deaths (Fatalities);Shutdowns (Institutional);Quarantines;Vizcarra, Martin;Peru",
+"column": null,
+"byline": "By Mitra Taj and Anatoly Kurmanaev",
+"type": "Article",
+"title": "Virus Exposes Weak Links in Peru’s Success Story",
+"abstract": "Deep-rooted inequality and graft have thwarted the steps Peru took to prepare for its response to the pandemic.",
+"des_facet": [
+"Coronavirus (2019-nCoV)",
+"Economic Conditions and Trends",
+"Politics and Government",
+"Income Inequality",
+"Corruption (Institutional)",
+"Deaths (Fatalities)",
+"Shutdowns (Institutional)",
+"Quarantines"
+],
+"org_facet": [],
+"per_facet": [
+"Vizcarra, Martin"
+],
+"geo_facet": [
+"Peru"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Relatives carrying the coffin of a suspected Covid-19 victim at a cemetery on the southern outskirts of Lima last month.",
+"copyright": "Ernesto Benavides/Agence France-Presse — Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/11/world/00Virus-Peru/00Virus-Peru-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/11/world/00Virus-Peru/00Virus-Peru-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/11/world/00Virus-Peru/00Virus-Peru-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/ff3a7f8c-2e43-502c-871c-b5d91b67fa86",
+"url": "https://www.nytimes.com/2020/06/16/health/coronavirus-toilets-flushing.html",
+"id": 100000007193321,
+"asset_id": 100000007193321,
+"source": "New York Times",
+"published_date": "2020-06-16",
+"updated": "2020-06-19 13:33:38",
+"section": "Health",
+"subsection": "",
+"nytdsection": "health",
+"adx_keywords": "Coronavirus (2019-nCoV);Bathrooms and Toilets;Coronavirus Risks and Safety Concerns;Research;Hygiene and Cleanliness;Feces;your-feed-science;your-feed-health;Wang, Ji-Xiang;Physics of Fluids (Journal)",
+"column": null,
+"byline": "By Knvul Sheikh",
+"type": "Article",
+"title": "Flushing the Toilet May Fling Coronavirus Aerosols All Over",
+"abstract": "A new study shows how turbulence from a toilet bowl can create a large plume that is potentially infectious to a bathroom’s next visitor.",
+"des_facet": [
+"Coronavirus (2019-nCoV)",
+"Bathrooms and Toilets",
+"Coronavirus Risks and Safety Concerns",
+"Research",
+"Hygiene and Cleanliness",
+"Feces",
+"your-feed-science",
+"your-feed-health"
+],
+"org_facet": [
+"Physics of Fluids (Journal)"
+],
+"per_facet": [
+"Wang, Ji-Xiang"
+],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "John Greim/LightRocket, via Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/16/science/16VIRUS-FLUSH/16VIRUS-FLUSH-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/science/16VIRUS-FLUSH/16VIRUS-FLUSH-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/science/16VIRUS-FLUSH/16VIRUS-FLUSH-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/ccf4a9d3-568f-5b05-84c5-ae685acd47b7",
+"url": "https://www.nytimes.com/2020/06/15/us/gay-transgender-workers-supreme-court.html",
+"id": 100000007069961,
+"asset_id": 100000007069961,
+"source": "New York Times",
+"published_date": "2020-06-15",
+"updated": "2020-06-16 23:26:21",
+"section": "U.S.",
+"subsection": "",
+"nytdsection": "u.s.",
+"adx_keywords": "Discrimination;Homosexuality and Bisexuality;Workplace Hazards and Violations;Transgender and Transsexuals;Civil Rights and Liberties;Decisions and Verdicts;Law and Legislation;Gorsuch, Neil M;Alito, Samuel A Jr;Stephens, Aimee;Bostock, Gerald;Zarda, Donald (1970-2014);Supreme Court (US);Equal Employment Opportunity Commission;RG & GR Harris Funeral Homes Inc",
+"column": null,
+"byline": "By Adam Liptak",
+"type": "Article",
+"title": "Civil Rights Law Protects Gay and Transgender Workers, Supreme Court Rules",
+"abstract": "The court said the language of the Civil Rights Act of 1964, which prohibits sex discrimination, applies to discrimination based on sexual orientation and gender identity.",
+"des_facet": [
+"Discrimination",
+"Homosexuality and Bisexuality",
+"Workplace Hazards and Violations",
+"Transgender and Transsexuals",
+"Civil Rights and Liberties",
+"Decisions and Verdicts",
+"Law and Legislation"
+],
+"org_facet": [
+"Supreme Court (US)",
+"Equal Employment Opportunity Commission",
+"RG & GR Harris Funeral Homes Inc"
+],
+"per_facet": [
+"Gorsuch, Neil M",
+"Alito, Samuel A Jr",
+"Stephens, Aimee",
+"Bostock, Gerald",
+"Zarda, Donald (1970-2014)"
+],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Tiffany Munroe on Sunday in Brooklyn during a rally to call attention to violence against transgender people of color.",
+"copyright": "Demetrius Freeman for The New York Times",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/15/us/politics/15dc-scotus-lgbt/15dc-scotus-lgbt-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/us/politics/15dc-scotus-lgbt/merlin_173534901_83f3865e-6ba4-4f1b-8d6c-a7f54db8cce8-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/us/politics/15dc-scotus-lgbt/merlin_173534901_83f3865e-6ba4-4f1b-8d6c-a7f54db8cce8-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/0582a540-250c-5cfa-abd7-655454d01717",
+"url": "https://www.nytimes.com/2020/06/12/arts/music/bob-dylan-rough-and-rowdy-ways.html",
+"id": 100000007177221,
+"asset_id": 100000007177221,
+"source": "New York Times",
+"published_date": "2020-06-12",
+"updated": "2020-06-18 15:48:48",
+"section": "Arts",
+"subsection": "Music",
+"nytdsection": "arts",
+"adx_keywords": "Folk Music;Pop and Rock Music;Dylan, Bob",
+"column": null,
+"byline": "By Douglas Brinkley",
+"type": "Article",
+"title": "Bob Dylan Has a Lot on His Mind",
+"abstract": "In a rare interview, the Nobel Prize winner discusses mortality, drawing inspiration from the past, and his new album, “Rough and Rowdy Ways.”",
+"des_facet": [
+"Folk Music",
+"Pop and Rock Music"
+],
+"org_facet": [],
+"per_facet": [
+"Dylan, Bob"
+],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Bob Dylan&rsquo;s &ldquo;Rough and Rowdy Ways&rdquo; is his first album of original songs since 2012.",
+"copyright": "Kevin Winter/Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/14/arts/14dylan1/merlin_146478750_0a7f707b-ed5c-4046-a922-d33d68db402d-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/arts/14dylan1/merlin_146478750_0a7f707b-ed5c-4046-a922-d33d68db402d-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/arts/14dylan1/merlin_146478750_0a7f707b-ed5c-4046-a922-d33d68db402d-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/e244fd62-c312-5db4-aca6-0cd855b16004",
+"url": "https://www.nytimes.com/2020/06/16/opinion/trump-coronavirus.html",
+"id": 100000007193927,
+"asset_id": 100000007193927,
+"source": "New York Times",
+"published_date": "2020-06-16",
+"updated": "2020-06-17 16:48:50",
+"section": "Opinion",
+"subsection": "",
+"nytdsection": "opinion",
+"adx_keywords": "Coronavirus Risks and Safety Concerns;Coronavirus Reopenings;Chemistry;Biology and Biochemistry;Vaccination and Immunization;Trump, Donald J;Fauci, Anthony S;Facebook Inc;Twitter;Tulsa (Okla);United States",
+"column": null,
+"byline": "By Thomas L. Friedman",
+"type": "Article",
+"title": "Is Trump Trying to Spread Covid-19?",
+"abstract": "Does he start each day wondering what expert advice to ignore next?",
+"des_facet": [
+"Coronavirus Risks and Safety Concerns",
+"Coronavirus Reopenings",
+"Chemistry",
+"Biology and Biochemistry",
+"Vaccination and Immunization"
+],
+"org_facet": [
+"Facebook Inc",
+"Twitter"
+],
+"per_facet": [
+"Trump, Donald J",
+"Fauci, Anthony S"
+],
+"geo_facet": [
+"Tulsa (Okla)",
+"United States"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Doug Mills/The New York Times",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/16friedman1/16friedman1-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/16friedman1/merlin_173565756_7549f509-9663-44b8-bc18-dc8f5b912fca-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/opinion/16friedman1/merlin_173565756_7549f509-9663-44b8-bc18-dc8f5b912fca-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/1f4c50de-ec2e-5f47-b4d2-65ed33b192d2",
+"url": "https://www.nytimes.com/2020/06/15/well/live/breathing-masks-coronavirus.html",
+"id": 100000007177286,
+"asset_id": 100000007177286,
+"source": "New York Times",
+"published_date": "2020-06-15",
+"updated": "2020-06-18 09:38:41",
+"section": "Well",
+"subsection": "Live",
+"nytdsection": "well",
+"adx_keywords": "Masks;Protective Clothing and Gear;Nose;Coronavirus (2019-nCoV);Oxygen;Carbon Dioxide;Lungs",
+"column": null,
+"byline": "By Jane E. Brody",
+"type": "Article",
+"title": "Looking at Masks and Respiratory Health",
+"abstract": "Even without a mask as an impediment, many people breathe in ways that compromise their well-being.",
+"des_facet": [
+"Masks",
+"Protective Clothing and Gear",
+"Nose",
+"Coronavirus (2019-nCoV)",
+"Oxygen",
+"Carbon Dioxide",
+"Lungs"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Gracia Lam",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/16/well/16SCI-BRODY-art/16SCI-BRODY-art-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/well/16SCI-BRODY-art/16SCI-BRODY-art-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/well/16SCI-BRODY-art/16SCI-BRODY-art-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/ae7db073-c6a8-5db8-851b-5807d195ddd3",
+"url": "https://www.nytimes.com/2020/06/10/upshot/dentists-coronavirus-economic-indicator.html",
+"id": 100000007179933,
+"asset_id": 100000007179933,
+"source": "New York Times",
+"published_date": "2020-06-10",
+"updated": "2020-06-16 12:05:31",
+"section": "The Upshot",
+"subsection": "",
+"nytdsection": "the upshot",
+"adx_keywords": "Teeth and Dentistry;Coronavirus Reopenings;United States Economy;Protective Clothing and Gear;Coronavirus (2019-nCoV);Shutdowns (Institutional);Coronavirus Aid, Relief, and Economic Security Act (2020)",
+"column": null,
+"byline": "By Sarah Kliff",
+"type": "Article",
+"title": "How’s the Economy Doing? Watch the Dentists",
+"abstract": "A crucial indicator of whether Americans feel safe returning to normal activities.",
+"des_facet": [
+"Teeth and Dentistry",
+"Coronavirus Reopenings",
+"United States Economy",
+"Protective Clothing and Gear",
+"Coronavirus (2019-nCoV)",
+"Shutdowns (Institutional)",
+"Coronavirus Aid, Relief, and Economic Security Act (2020)"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Installing a crown at a dental office in Vinton, Iowa, last month. In many places, dentists have gone back to work.",
+"copyright": "Andy Abeyta/The Gazette, via Associated Press",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/13/upshot/13up-coronavirus-dentist/10up-coronavirus-dentist-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/13/upshot/13up-coronavirus-dentist/10up-coronavirus-dentist-mediumThreeByTwo210-v2.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/13/upshot/13up-coronavirus-dentist/10up-coronavirus-dentist-mediumThreeByTwo440-v2.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/f8da7d9f-dec8-559e-ad96-bc30245a846a",
+"url": "https://www.nytimes.com/2020/06/18/health/resilience-relationships-trauma.html",
+"id": 100000007182686,
+"asset_id": 100000007182686,
+"source": "New York Times",
+"published_date": "2020-06-18",
+"updated": "2020-06-20 22:08:48",
+"section": "Health",
+"subsection": "",
+"nytdsection": "health",
+"adx_keywords": "Content Type: Service;Post-Traumatic Stress Disorder;Psychology and Psychologists;Anxiety and Stress",
+"column": null,
+"byline": "By Eilene Zimmerman",
+"type": "Article",
+"title": "What Makes Some People More Resilient Than Others",
+"abstract": "The very earliest days of our lives, and our closest relationships, can offer clues about how we cope with adversity.",
+"des_facet": [
+"Content Type: Service",
+"Post-Traumatic Stress Disorder",
+"Psychology and Psychologists",
+"Anxiety and Stress"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Monika Aichele",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/18/multimedia/18sp-resilience-zimmerman/18sp-resilience-zimmerman-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/18/multimedia/18sp-resilience-zimmerman/18sp-resilience-zimmerman-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/18/multimedia/18sp-resilience-zimmerman/18sp-resilience-zimmerman-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/96f46bc6-160a-5432-ab73-eb4c1e105251",
+"url": "https://www.nytimes.com/2020/06/12/opinion/sunday/black-america-racism-refugee.html",
+"id": 100000007186177,
+"asset_id": 100000007186177,
+"source": "New York Times",
+"published_date": "2020-06-12",
+"updated": "2020-06-14 20:23:48",
+"section": "Opinion",
+"subsection": "Sunday Review",
+"nytdsection": "opinion",
+"adx_keywords": "Black People;Discrimination;George Floyd Protests (2020);Black Lives Matter Movement;Civil Rights and Liberties;Coronavirus (2019-nCoV);United States;Trinidad and Tobago",
+"column": null,
+"byline": "By Tiffanie Drayton",
+"type": "Article",
+"title": "I’m a Black American. I Had to Get Out.",
+"abstract": "The racism was too much. I fled.",
+"des_facet": [
+"Black People",
+"Discrimination",
+"George Floyd Protests (2020)",
+"Black Lives Matter Movement",
+"Civil Rights and Liberties",
+"Coronavirus (2019-nCoV)"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [
+"United States",
+"Trinidad and Tobago"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": " ",
+"copyright": "Toyin Ojih Odutola. Courtesy of the artist and Jack Shainman Gallery, New York.",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Drayton/14Drayton-thumbStandard-v3.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Drayton/14Drayton-mediumThreeByTwo210-v2.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Drayton/14Drayton-mediumThreeByTwo440-v2.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/2dcd5b4c-b3ab-5c40-a212-ffa749753290",
+"url": "https://www.nytimes.com/2020/06/13/opinion/sunday/gregg-popovich-trump-nba-protests.html",
+"id": 100000007188897,
+"asset_id": 100000007188897,
+"source": "New York Times",
+"published_date": "2020-06-13",
+"updated": "2020-06-14 20:23:54",
+"section": "Opinion",
+"subsection": "Sunday Review",
+"nytdsection": "opinion",
+"adx_keywords": "Basketball;Coaches and Managers;Black People;George Floyd Protests (2020);Black Lives Matter Movement;United States Politics and Government;Popovich, Gregg;Trump, Donald J;San Antonio Spurs;National Basketball Assn",
+"column": null,
+"byline": "By Maureen Dowd",
+"type": "Article",
+"title": "An Anti-Trump Slam Dunk",
+"abstract": "On the issue of race, America’s Coach boxes out America’s Cretin.",
+"des_facet": [
+"Basketball",
+"Coaches and Managers",
+"Black People",
+"George Floyd Protests (2020)",
+"Black Lives Matter Movement",
+"United States Politics and Government"
+],
+"org_facet": [
+"San Antonio Spurs",
+"National Basketball Assn"
+],
+"per_facet": [
+"Popovich, Gregg",
+"Trump, Donald J"
+],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Gregg Popovich, head coach of the San Antonio Spurs.",
+"copyright": "Christian Petersen/Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Dowd/14Dowd-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Dowd/14Dowd-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Dowd/14Dowd-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/cd0484f3-9d9d-5ab9-b053-0d44ea2ddc6f",
+"url": "https://www.nytimes.com/2020/06/13/opinion/sunday/black-politicians-george-floyd-protests.html",
+"id": 100000007181241,
+"asset_id": 100000007181241,
+"source": "New York Times",
+"published_date": "2020-06-13",
+"updated": "2020-06-14 16:57:34",
+"section": "Opinion",
+"subsection": "Sunday Review",
+"nytdsection": "opinion",
+"adx_keywords": "Black People;George Floyd Protests (2020);Black Lives Matter Movement;United States Politics and Government",
+"column": null,
+"byline": "By Keeanga-Yamahtta Taylor",
+"type": "Article",
+"title": "The End of Black Politics",
+"abstract": "Black leaders regularly fail to rise to the challenges that confront young people.",
+"des_facet": [
+"Black People",
+"George Floyd Protests (2020)",
+"Black Lives Matter Movement",
+"United States Politics and Government"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Diana Ejaita",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Taylor/14Taylor-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Taylor/14Taylor-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/14/opinion/sunday/14Taylor/14Taylor-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/25c5caf1-259b-59d2-a396-5d71b313103f",
+"url": "https://www.nytimes.com/2020/06/19/opinion/tulsa-race-riot-massacre-graves.html",
+"id": 100000007024426,
+"asset_id": 100000007024426,
+"source": "New York Times",
+"published_date": "2020-06-19",
+"updated": "2020-06-21 08:45:47",
+"section": "Opinion",
+"subsection": "",
+"nytdsection": "opinion",
+"adx_keywords": "Black People;Discrimination;Looting (Crime);Lynching;Vigilantes;Race and Ethnicity;Deaths (Fatalities);Hooker, Olivia (1915-2018);Ku Klux Klan;Tulsa (Okla)",
+"column": null,
+"byline": "By Brent Staples",
+"type": "Article",
+"title": "The Burning of Black Wall Street, Revisited",
+"abstract": "Nearly a century after the Tulsa Race Massacre, the search for the dead continues.",
+"des_facet": [
+"Black People",
+"Discrimination",
+"Looting (Crime)",
+"Lynching",
+"Vigilantes",
+"Race and Ethnicity",
+"Deaths (Fatalities)"
+],
+"org_facet": [
+"Ku Klux Klan"
+],
+"per_facet": [
+"Hooker, Olivia (1915-2018)"
+],
+"geo_facet": [
+"Tulsa (Okla)"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Some of the ruins from the Tulsa Race Massacre in June 1921, when white vigilantes set the Oklahoma city&rsquo;s African-American district ablaze.",
+"copyright": "Bettmann Archive/Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/21/opinion/21tulsa-top-right/19tulsa4-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/21/opinion/21tulsa-top-right/19tulsa4-mediumThreeByTwo210-v3.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/21/opinion/21tulsa-top-right/19tulsa4-mediumThreeByTwo440-v3.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/d674dde3-991c-5d60-b678-5e1a88c1c198",
+"url": "https://www.nytimes.com/2020/06/14/nyregion/central-park-amy-cooper-christian-racism.html",
+"id": 100000007163605,
+"asset_id": 100000007163605,
+"source": "New York Times",
+"published_date": "2020-06-14",
+"updated": "2020-06-17 05:05:23",
+"section": "New York",
+"subsection": "",
+"nytdsection": "new york",
+"adx_keywords": "Black Lives Matter Movement;George Floyd Protests (2020);Race and Ethnicity;Discrimination;Black People;Cooper, Christian (Birder);Cooper, Amy (May 25, 2020 Central Park Incident);Central Park (Manhattan, NY)",
+"column": null,
+"byline": "By Sarah Maslin Nir",
+"type": "Article",
+"title": "How 2 Lives Collided in Central Park, Rattling the Nation",
+"abstract": "The inside story of the black birder and the white woman who called the police on him. Their encounter stirred wrenching conversations about racism and white privilege.",
+"des_facet": [
+"Black Lives Matter Movement",
+"George Floyd Protests (2020)",
+"Race and Ethnicity",
+"Discrimination",
+"Black People"
+],
+"org_facet": [],
+"per_facet": [
+"Cooper, Christian (Birder)",
+"Cooper, Amy (May 25, 2020 Central Park Incident)"
+],
+"geo_facet": [
+"Central Park (Manhattan, NY)"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "",
+"copyright": "Brittainy Newman/The New York Times; Alison Faircloth",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/16/nyregion/00CENTRALPARK-TWOLIVES-top/00CENTRALPARK-TWOLIVES-top-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/nyregion/00CENTRALPARK-TWOLIVES-top/00CENTRALPARK-TWOLIVES-top-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/16/nyregion/00CENTRALPARK-TWOLIVES-top/00CENTRALPARK-TWOLIVES-top-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/f9777004-2651-556d-86de-0e409359f58f",
+"url": "https://www.nytimes.com/2020/06/16/us/coronavirus-inmates-prisons-jails.html",
+"id": 100000007104159,
+"asset_id": 100000007104159,
+"source": "New York Times",
+"published_date": "2020-06-16",
+"updated": "2020-06-18 08:42:20",
+"section": "U.S.",
+"subsection": "",
+"nytdsection": "u.s.",
+"adx_keywords": "Coronavirus (2019-nCoV);Prisons and Prisoners;Tests (Medical);States (US)",
+"column": null,
+"byline": "By Timothy Williams, Libby Seline and Rebecca Griesbach",
+"type": "Article",
+"title": "Coronavirus Cases Rise Sharply in Prisons Even as They Plateau Nationwide",
+"abstract": "Prison officials have been reluctant to do widespread virus testing even as infection rates are escalating.",
+"des_facet": [
+"Coronavirus (2019-nCoV)",
+"Prisons and Prisoners",
+"Tests (Medical)",
+"States (US)"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Protesters held a rally to bring awareness about the spread of the coronavirus inside the Marion Correctional Institution in Marion, Ohio, in May.",
+"copyright": "Megan Jelinger/Agence France-Presse — Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/10/us/00virus-prisons01/00virus-prisons01-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/10/us/00virus-prisons01/00virus-prisons01-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/10/us/00virus-prisons01/00virus-prisons01-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/2fcee640-f30a-58de-b6f1-fd0be394e872",
+"url": "https://www.nytimes.com/2020/06/17/realestate/attract-birds-to-your-garden-bird-friendly-garden.html",
+"id": 100000007184420,
+"asset_id": 100000007184420,
+"source": "New York Times",
+"published_date": "2020-06-17",
+"updated": "2020-06-18 20:42:51",
+"section": "Real Estate",
+"subsection": "",
+"nytdsection": "real estate",
+"adx_keywords": "Real Estate and Housing (Residential);Gardens and Gardening;Birds;Quarantine (Life and Culture)",
+"column": null,
+"byline": "By Margaret Roach",
+"type": "Article",
+"title": "Making a Garden That Welcomes the Birds",
+"abstract": "Using native plant species helps, but there are two other things you can do to make birds feel at home — and they don’t involve any planting at all.",
+"des_facet": [
+"Real Estate and Housing (Residential)",
+"Gardens and Gardening",
+"Birds",
+"Quarantine (Life and Culture)"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "A young rose-breasted grosbeak spent part of a summer afternoon on a leaf in the back garden.",
+"copyright": "Margaret Roach",
+"approved_for_syndication": 0,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/21/realestate/17garden-birds1/oakImage-1592322487891-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/21/realestate/17garden-birds1/oakImage-1592322487891-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/21/realestate/17garden-birds1/oakImage-1592322487891-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/b9049bfc-8567-565f-9c87-65568cd020f4",
+"url": "https://www.nytimes.com/2020/06/18/opinion/tulsa-race-massacre-racism.html",
+"id": 100000007198448,
+"asset_id": 100000007198448,
+"source": "New York Times",
+"published_date": "2020-06-18",
+"updated": "2020-06-19 19:28:02",
+"section": "Opinion",
+"subsection": "",
+"nytdsection": "opinion",
+"adx_keywords": "Black People;Discrimination;Juneteenth;Reconstruction Era;United States Politics and Government;Slavery (Historical);Trump, Donald J;Tulsa (Okla)",
+"column": null,
+"byline": "By Paul Krugman",
+"type": "Article",
+"title": "Tulsa and the Many Sins of Racism",
+"abstract": "The ugly story didn’t end with the abolition of slavery.",
+"des_facet": [
+"Black People",
+"Discrimination",
+"Juneteenth",
+"Reconstruction Era",
+"United States Politics and Government",
+"Slavery (Historical)"
+],
+"org_facet": [],
+"per_facet": [
+"Trump, Donald J"
+],
+"geo_facet": [
+"Tulsa (Okla)"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": "Smoke billowed up from fires set during the Tulsa Race Massacre in June 1921.",
+"copyright": "Corbis, via Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/18/opinion/18krugman1/18krugman1-thumbStandard.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/18/opinion/18krugman1/18krugman1-mediumThreeByTwo210.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/18/opinion/18krugman1/18krugman1-mediumThreeByTwo440.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+},
+{
+"uri": "nyt://article/1ce66612-0984-5acf-b1fd-8b24b3121650",
+"url": "https://www.nytimes.com/2020/06/12/opinion/sunday/floyd-abolish-defund-police.html",
+"id": 100000007178486,
+"asset_id": 100000007178486,
+"source": "New York Times",
+"published_date": "2020-06-12",
+"updated": "2020-06-14 20:23:53",
+"section": "Opinion",
+"subsection": "Sunday Review",
+"nytdsection": "opinion",
+"adx_keywords": "George Floyd Protests (2020);Black Lives Matter Movement;Police Brutality, Misconduct and Shootings;Police Reform;United States",
+"column": null,
+"byline": "By Mariame Kaba",
+"type": "Article",
+"title": "Yes, We Mean Literally Abolish the Police",
+"abstract": "Because reform won’t happen.",
+"des_facet": [
+"George Floyd Protests (2020)",
+"Black Lives Matter Movement",
+"Police Brutality, Misconduct and Shootings",
+"Police Reform"
+],
+"org_facet": [],
+"per_facet": [],
+"geo_facet": [
+"United States"
+],
+"media": [
+{
+"type": "image",
+"subtype": "photo",
+"caption": " ",
+"copyright": "Illustration by Nicholas Konrad; photograph by Getty Images",
+"approved_for_syndication": 1,
+"media-metadata": [
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/14kaba_sub2/14kaba_sub2-thumbStandard-v8.jpg",
+"format": "Standard Thumbnail",
+"height": 75,
+"width": 75
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/14kaba_sub2/14kaba_sub2-mediumThreeByTwo210-v8.jpg",
+"format": "mediumThreeByTwo210",
+"height": 140,
+"width": 210
+},
+{
+"url": "https://static01.nyt.com/images/2020/06/15/opinion/14kaba_sub2/14kaba_sub2-mediumThreeByTwo440-v8.jpg",
+"format": "mediumThreeByTwo440",
+"height": 293,
+"width": 440
+}
+]
+}
+],
+"eta_id": 0
+}
+]
+}
