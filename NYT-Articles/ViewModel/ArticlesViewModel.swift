@@ -10,12 +10,6 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-enum ArticleError {
-    case serverMessage(String)
-    case clientError(String)
-    case initError
-}
-
 protocol ViewModelType {
     associatedtype Input
     associatedtype Output
@@ -46,20 +40,20 @@ struct ArticleViewModel: ViewModelType {
         self.rankingType = rankingType
         let errorRelay = PublishRelay<String>()
         let articleRelay = PublishRelay<[ArticleResult]>()
-        
+        let reloadRelay = PublishRelay<Void>()
+
         apiClient.requestData(type: rankingType).subscribe(
             onNext: { article in
                 articleRelay.accept(article.results)
         },
             onError: { error in
-                print(error.localizedDescription)
                 errorRelay.accept(error.localizedDescription)
         },
             onCompleted: {
                 print("Completed event.")
         }).disposed(by: disposeable)
         
-        self.input = Input(reload: PublishRelay<Void>())
+        self.input = Input(reload: reloadRelay)
         self.output = Output(articles: articleRelay, error: errorRelay)
     }
 }
