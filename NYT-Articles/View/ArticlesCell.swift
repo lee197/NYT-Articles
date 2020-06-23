@@ -44,7 +44,7 @@ class ArticlesCell: UITableViewCell {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: sectionLabel.bottomAnchor).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: sectionLabel.bottomAnchor, constant: 10).isActive = true
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont(name: "AvenirNext-DemiBold", size: 16)
     }
