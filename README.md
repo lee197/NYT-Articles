@@ -26,6 +26,15 @@ Then install the pods in your Xcode project directory:
 ```
 $ pod install
 ```
+Run Project:
+```
+cmd + R
+```
+
+Run Test:
+```
+cmd + U
+```
 
 ## Project structure:
 
