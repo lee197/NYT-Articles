@@ -33,6 +33,11 @@ $ pod install
 * Model: data model objects
 * Network: Networking Layer
 * Support: Code supporting the main functions
+## References:
+* Rxtest: https://benoitpasquier.com/how-to-use-rxtests-to-test-mvvm/
+* Rxtest tutorail: https://www.raywenderlich.com/7408-testing-your-rxswift-code
+* Rxswift with URLSession: https://www.codementor.io/@mehobega/urlsession-web-api-calls-reactive-way-rxswift-rxcocoa-10kmc5h669
+* Rxswif testable MVVM: https://medium.com/blablacar-tech/rxswift-mvvm-66827b8b3f10
 
 ## Next step:
 
