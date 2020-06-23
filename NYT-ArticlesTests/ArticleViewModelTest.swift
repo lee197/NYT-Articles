@@ -33,14 +33,19 @@ class ArticleViewModelTest: XCTestCase {
     
     func testFetchWithError() {
         
-//        let articles = scheduler.createObserver(Articles.self)
+        let articles = scheduler.createObserver([ArticleResult].self)
         let error = scheduler.createObserver(String.self)
         
         service.articles = nil
         self.viewModel
             .output
+            .articles
+            .drive(articles)
+            .disposed(by: disposeBag)
+        
+        self.viewModel
+            .output
             .error
-            .asDriver(onErrorJustReturn: "")
             .drive(error)
             .disposed(by: disposeBag)
         
@@ -50,7 +55,33 @@ class ArticleViewModelTest: XCTestCase {
         
         scheduler.start()
         
-        XCTAssertEqual(error.events, [.next(10, "No converter")])
+        XCTAssertEqual(error.events, [.next(10, "error happened")])
+    }
+    
+    func testFetchArticles() {
+        
+        // create scheduler
+        let articles = scheduler.createObserver([ArticleResult].self)
+        
+        // giving a service mocking articles
+        let expectedArticles: [ArticleResult] = DataGenerator.finishFetchData().results
+        service.articles = DataGenerator.finishFetchData()
+
+        // bind the result
+          self.viewModel
+                  .output
+                  .articles
+            .drive(articles)
+            .disposed(by: disposeBag)
+        
+        // mock a reload
+        scheduler.createColdObservable([.next(10, ()), .next(30, ())])
+            .bind(to: viewModel.input.reload)
+            .disposed(by: disposeBag)
+        
+        scheduler.start()
+        
+        XCTAssertEqual(articles.events, [.next(10, expectedArticles), .next(30, expectedArticles)])
     }
 }
 
@@ -63,7 +94,7 @@ fileprivate class MockArticleFetchingService: ArticleFetchingObservable {
         if let articles = articles {
             return Observable.just(articles)
         } else {
-            return Observable.error(ErrorResult.custom(string: "error here"))
+            return Observable.error(ErrorResult.custom(string: "error happened"))
             
         }
     }
@@ -79,19 +110,5 @@ class DataGenerator {
         decoder.dateDecodingStrategy = .iso8601
         let articlesFromFile = try! decoder.decode(Articles.self, from: data)
         return articlesFromFile
-    }
-}
-
-enum ErrorResult: Error {
-    case network(string: String)
-    case parser(string: String)
-    case custom(string: String)
-    
-    var localizedDescription: String {
-        switch self {
-        case .network(let value):   return value
-        case .parser(let value):    return value
-        case .custom(let value):    return value
-        }
     }
 }

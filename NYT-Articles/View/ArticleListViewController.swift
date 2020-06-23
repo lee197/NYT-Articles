@@ -50,13 +50,13 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
         tableView.register(ArticlesCell.self, forCellReuseIdentifier: "aCell")
         setupBinding()
         setupErrorBinding()
+        self.articlesViewModel.input.reload.accept(())
     }
     
     private func setupBinding(){
-        
         articlesViewModel.output
-            .articles
-            .bind(to: tableView.rx.items(cellIdentifier: "aCell", cellType: ArticlesCell.self)) {  (row,article,cell) in
+            .articles.asDriver(onErrorJustReturn: [])
+            .drive(tableView.rx.items(cellIdentifier: "aCell", cellType: ArticlesCell.self)) {  (row,article,cell) in
                 cell.titleLabel.text = article.title
                 cell.sectionLabel.text = article.section
                 cell.abstrctLabel.text = article.abstract

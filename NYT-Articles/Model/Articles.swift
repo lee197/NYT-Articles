@@ -19,7 +19,12 @@ struct Articles: Decodable {
 }
 
 // MARK: - Result
-struct ArticleResult: Decodable {
+struct ArticleResult: Decodable, Equatable {
+    static func == (lhs: ArticleResult, rhs: ArticleResult) -> Bool {
+        return lhs.url == rhs.url &&
+            lhs.title == rhs.title
+    }
+    
     let url: String
     let section, subsection: String
     let title, abstract: String

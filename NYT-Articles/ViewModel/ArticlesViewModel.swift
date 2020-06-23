@@ -10,15 +10,21 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol ViewModelType {
-    associatedtype Input
-    associatedtype Output
+enum ErrorResult: Error {
+    case network(string: String)
+    case parser(string: String)
+    case custom(string: String)
     
-    var input: Input { get }
-    var output: Output { get }
+    var localizedDescription: String {
+        switch self {
+        case .network(let value):   return value
+        case .parser(let value):    return value
+        case .custom(let value):    return value
+        }
+    }
 }
 
-struct ArticleViewModel: ViewModelType {
+struct ArticleViewModel {
     let input: Input
     let output: Output
     
@@ -31,30 +37,26 @@ struct ArticleViewModel: ViewModelType {
     }
     
     struct Output {
-        let articles: PublishRelay<[ArticleResult]>
-        let error: PublishRelay<String>
+        let articles: Driver<[ArticleResult]>
+        let error: Driver<String>
     }
     
-    init(apiClient: ArticleFetchingObservable = APIManager(), rankingType: ArticlesRankingType) {
+    
+    init(apiClient: ArticleFetchingObservable = APIManager.shared, rankingType: ArticlesRankingType) {
         self.apiClient = apiClient
         self.rankingType = rankingType
         let errorRelay = PublishRelay<String>()
-        let articleRelay = PublishRelay<[ArticleResult]>()
         let reloadRelay = PublishRelay<Void>()
-
-        apiClient.requestData(type: rankingType).subscribe(
-            onNext: { article in
-                articleRelay.accept(article.results)
-        },
-            onError: { error in
-                errorRelay.accept(error.localizedDescription)
-        },
-            onCompleted: {
-                print("Completed event.")
-        }).disposed(by: disposeable)
         
+        let articles = reloadRelay
+            .asObservable()
+            .flatMapLatest({ apiClient.requestData(type: rankingType) })
+            .map({ $0.results })
+            .asDriver { (error) -> Driver<[ArticleResult]> in
+                errorRelay.accept((error as? ErrorResult)?.localizedDescription ?? error.localizedDescription)
+                return Driver.just([])
+        }
         self.input = Input(reload: reloadRelay)
-        self.output = Output(articles: articleRelay, error: errorRelay)
+        self.output = Output(articles: articles, error: errorRelay.asDriver(onErrorJustReturn: "error happened"))
     }
 }
-
