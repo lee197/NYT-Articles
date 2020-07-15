@@ -1,5 +1,5 @@
-# NYT-Articles
-An app to display a list of New York Times News
+# NYT-Articles 
+(Rxswift + MVVM) An app to display a list of New York Times News
 
 ## Branches:
 
