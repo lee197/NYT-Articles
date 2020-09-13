@@ -1,5 +1,5 @@
 # NYT-Articles
-An app to display a list of New York Times News
+(Rxswift + MVVM) An app to display a list of New York Times News
 
 ## Branches:
 
@@ -25,6 +25,15 @@ $ sudo gem install cocoapods
 Then install the pods in your Xcode project directory:
 ```
 $ pod install
+```
+Run Project:
+```
+cmd + R
+```
+
+Run Test:
+```
+cmd + U
 ```
 
 ## Project structure:
