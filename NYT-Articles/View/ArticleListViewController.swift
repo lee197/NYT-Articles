@@ -11,8 +11,7 @@ import RxSwift
 import RxCocoa
 
 class ArticleListViewController: UIViewController, UIScrollViewDelegate {
-    private var articlesViewModel = ArticleViewModel(rankingType: .email)
-    private let rankingFactor: ArticlesRankingType
+    private var articlesViewModel: ArticleViewModel
     private let disposeBag = DisposeBag()
     private weak var tableView: UITableView!
     
@@ -33,7 +32,7 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
     }
     
     init(rankingFactor: ArticlesRankingType) {
-        self.rankingFactor = rankingFactor
+        articlesViewModel = ArticleViewModel(rankingType: rankingFactor)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -45,7 +44,6 @@ class ArticleListViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.view.addSubview(tableView)
-        articlesViewModel = ArticleViewModel(rankingType: rankingFactor)
         
         tableView.register(ArticlesCell.self, forCellReuseIdentifier: "aCell")
         setupBinding()

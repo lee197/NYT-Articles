@@ -24,7 +24,16 @@ enum ErrorResult: Error {
     }
 }
 
-struct ArticleViewModel {
+protocol ViewModelType {
+    associatedtype Input
+    associatedtype Output
+    
+    var input: Input { get }
+    var output: Output { get }
+}
+
+
+struct ArticleViewModel: ViewModelType {
     let input: Input
     let output: Output
     
