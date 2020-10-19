@@ -540,8 +540,9 @@
 			baseConfigurationReference = 54C4317F0BD5CD5B88E63F5F /* Pods-NYT-Articles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSYQL45PN9;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UPUH96UWXJ;
 				INFOPLIST_FILE = "NYT-Articles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -549,6 +550,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foilmusic.lee.NYT-Articles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.foilmusic.lee.NYT-Articles";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,8 +561,9 @@
 			baseConfigurationReference = ADD9A62DA828E0B610F24340 /* Pods-NYT-Articles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XSYQL45PN9;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UPUH96UWXJ;
 				INFOPLIST_FILE = "NYT-Articles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,6 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.foilmusic.lee.NYT-Articles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.foilmusic.lee.NYT-Articles";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -580,7 +584,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2QPYZY5Q25;
+				DEVELOPMENT_TEAM = UPUH96UWXJ;
 				INFOPLIST_FILE = "NYT-ArticlesTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -603,7 +607,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2QPYZY5Q25;
+				DEVELOPMENT_TEAM = UPUH96UWXJ;
 				INFOPLIST_FILE = "NYT-ArticlesTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
